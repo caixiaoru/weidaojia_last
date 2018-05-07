@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/commen.css" />
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style type="text/css">
+    html,body{
+        height: 100%;
+        background-color: white;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="login_header" align="center">
+       <a href="JavaScript:void(0)" class="login_login" onclick="fnRegister()">注册</a> 
+        <a href="JavaScript:void(0)" class="login_loginin">登录</a>
+    </div>
+    <form id="login_form">
+        <div>
+            <label for="username">用户名</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="userpassword">密码</label>
+            <input type="text" id="userpassword">
+
+        </div>
+
+    </form>
+    <div class="login_button" onclick="login()">登录</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascrip  9iit" src="../script/SHA1.js"></script>
+<script type="text/javascript" src="../script/APICloud-rest.js"></script>
+<script type="text/javascript" src="../script/APICloud-rest-SHA1.js"></script>
+<script type="text/javascript" src="../script/apicloudjs/login_last.js"></script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<select name=""  onchange="select(this)">
+　　<option value="1">题目一</option>
+　　<option value="2">题目二</option>
+　　<option value="3">题目三</option>
+　　<option value="4">题目四</option>
+</select>
+<div>
+　　<div  id="div1">内容一
+　　</div>
+　　<div id="div2" style="display:none">内容二
+　　</div>
+　　<div id="div3" style="display:none">内容三
+　　</div>
+　　<div id="div4" style="display:none">内容四
+　　</div>
+
+</div>
+<script src="../script/jquery.min.js"></script>
+<script>
+   function select(obj){
+$("#div" + obj.value).show().siblings().hide();
+
+//找到内容的标签 + 点击select获得的value值，让它显示，再让他的兄弟标签隐藏。
+}
+   
+     
+    
+</script>
+</body>
+
+
+</html>

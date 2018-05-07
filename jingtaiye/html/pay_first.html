@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/commen.css">
+   
+</head>
+<body>
+    <div id="pageone">
+    <!--header-->
+    <div id="index_header" class="collect_header address_edit_header">
+        <!--返回我的-->
+        <div></div>
+        <div>结算</div>
+    </div>
+
+    <!--main-->
+    <div class="address_edit">
+    	<!-- food -->
+       <div>
+       	   <div class="pay_food_list">
+                        <div class="pay_store_list">     
+                            <p>账单</p>                           
+                        </div>
+                        <div class="pay_food_list_name">
+
+                          <ul id="pay_list">                            
+                           <!--  <li>                              
+                                <div>
+                                  <p>五味拌</p>
+                                  <p>&times;<span>2</span></p>
+                                  <p><span>9.9</span>元</p>
+                                </div>
+                            </li> -->
+                          </ul>  
+                          
+
+                        </div>
+           </div>
+
+           <!-- 地址 -->
+           <div class="pay_add">
+             <ul>
+               <li class="pay_add_one">
+                 <a href="javascript:void(0)" onclick="fnaddress()">
+                   
+                   <p>地址</p>
+                   <p id="pay_address">河北师范大学新校区
+                   <i class="fa fa-angle-right"></i></p>
+                 </a>
+               </li>
+               <li class="pay_add_two">
+                 
+                   <p>付款方式</p>
+                   <form>
+                     <select>
+                       <option>支付宝</option>
+                       <option>微信</option>
+                       <option>银行卡</option>
+                       <option>花呗</option>
+                     </select>
+                   </form>                   
+                 
+               </li>
+             </ul>
+           </div>
+
+           <!-- zhifu -->
+           <div class="footer_pay">
+             支付
+           </div>
+
+       </div>
+
+    </div>
+
+  
+
+
+
+</div>
+    
+    <!-- 支付成功 -->
+    <div class="pay_succ" id="pay_succ" onclick="pay_succ(this)">
+      <img src="../image/zhifu.png">
+      <p>支付成功</p>
+    </div>
+
+<script src="../script/jquery.min.js"></script>
+<script src="../script/api.js"></script>
+<script type="text/javascrip  9iit" src="../script/SHA1.js"></script>
+<script type="text/javascript" src="../script/APICloud-rest.js"></script>
+<script type="text/javascript" src="../script/APICloud-rest-SHA1.js"></script>
+<script src="../script/commen.js"></script>
+<script src="../script/apicloudjs/pay_first.js"></script>
+
+</body>
+
+</html>

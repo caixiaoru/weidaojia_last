@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/commen.css" />
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style type="text/css">
+    html,body{
+        height: 100%;
+        background-color: white;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="login_header" align="center">
+       <a href="login_in" class="login_login">登录</a> 
+        <a href="JavaScript:void(0)" class="login_loginin">注册</a>
+    </div>
+    <form id="login_form">
+        <!-- <div>
+            <label for="user_phone">手机号</label>
+            <input type="text" id="user_phone">
+        </div> -->
+        <div class="send_num">
+            <input type="text">
+            <span></span><span>秒后重新发送</span>
+
+        </div>
+        
+
+    </form>
+    <div class="login_button" onclick="login2()">确定</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+    apiready = function(){ 
+//         var smsVerify = api.require('smsVerify');
+// smsVerify.register(function(ret, err){
+//     if(ret.status){
+//         api.alert({msg: '注册成功'});
+//     }else{
+//         api.alert({msg: err.code+' 注册失败'});
+//     }
+// });
+    };
+function login2(){
+    
+    // var user_phone=$api.byId("user_phone").value;
+    // var user_password=$api.byId("user_password").value;
+    // var now = Date.now(); 
+    // var appKey = SHA1("A6076635424176"+"UZ"+ "09645BE2-3CD4-4015-1688-A262573D1D06"+"UZ"+now)+"."+now; 
+    // api.ajax({
+    //     url: 'https://d.apicloud.com/mcm/api/user/login',
+    //     method: 'post',
+    //     headers: {
+    //         "X-APICloud-AppId": "A6075527744015",
+    //         "X-APICloud-AppKey": appKey
+    //     },
+    //     data: {
+    //         values: {
+    //             "username": user_phone,
+    //             "password": user_password,
+    //             "email":"1441780228@qq.com"
+    //         }
+    //     }
+        
+    // }, function(ret, err) {  
+          
+    //     if (ret && ret.id) {    
+           
+            
+    //         // 保存用户信息
+    //         // alert(JSON.stringify(ret));
+    //          $api.setStorage('userId', ret.userId);  
+    //          $api.setStorage('uId',ret.id);           
+    //          // var userId=$api.getStorage('uId');
+    //          //  alert(userId);           
+            
+    //         api.alert({
+    //             title: '提示',
+    //             msg: '登录成功',
+    //         }, function(ret, err) {
+    //             if (ret) {
+                   
+    //        //  $(window).attr("location","one.html");
+    //        // // var username = $api.getStorage('userInfo');
+    //        // // alert(username.username);
+    //             }
+    //         });
+    //     } else {
+    //        var err_msg = '错误码：' + err.code + '；错误信息：' + err.msg + '网络状态码：' + err.statusCode;
+    //         api.toast({
+    //             msg:  err_msg,
+    //             duration: 2000,
+    //             location: 'middle'
+    //         });
+    //     }
+    // });
+
+}
+    
+</script>
+</html>
